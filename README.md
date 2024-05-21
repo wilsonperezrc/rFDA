@@ -16,7 +16,7 @@ Used R packages:
 
 <h2>Data sets:</h2>
 
- We apply the methods analyzed in the study to two real datasets for outlier detection of functional curves.
+ We applied the methods analyzed in the study to two real datasets for the detection of functional curves.
 
  <h3>El Niño Sea Surface Temperature data</h3>
 
