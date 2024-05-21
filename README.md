@@ -17,7 +17,7 @@ Used R packages:
 
  <h3>El Niño Sea Surface Temperature data</h3>
 
- The dataset corresponds to the monthly average of El Niño Sea Surface Temperature, representing Pacific Ocean temperatures in the South American coastal region (coordinates $90^{\circ} - 80^{\circ}$ West, $0^{\circ} - 10^{\circ}$ South). The dataset to be used is obtained from the <em>rainbow\_1.4.zip library</em>, available at https://cran.r-project.org/src/contrib/Archive/rainbow/.
+ The dataset corresponds to the monthly average of El Niño Sea Surface Temperature, representing Pacific Ocean temperatures in the South American coastal region (coordinates $90^{\circ} - 80^{\circ}$ West, $0^{\circ} - 10^{\circ}$ South). The dataset to be used is obtained from the <em>rainbow\_1.4.zip</em> library, available at https://cran.r-project.org/src/contrib/Archive/rainbow/.
 
   <h3>SCImago Journal Rank data</h3>
 
