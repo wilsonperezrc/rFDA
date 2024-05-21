@@ -10,7 +10,7 @@ Used R packages:
 <UL>
 <LI> 'fda.usc', version: 2.0.2
 <LI> 'fdaoutlier', version: 0.2.0
-<LI> 'raibow', version: 3.7
+<LI> 'rainbow', version: 3.7
 </UL>
 
 
