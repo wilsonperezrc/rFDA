@@ -7,9 +7,12 @@ Complementary material to outlier detection in functional data analysis. This ap
 Program: R, version 4.0.3
 
 Used R packages:
+<UL>
+<LI> 'fda.usc', version: 2.0.2
+<LI> 'fdaoutlier', version: 0.2.0
+<LI> 'raibow', version: 3.7
+</UL>
 
-'fda.usc', version: 6.0-84
-'fdaoutlier', version: 1.9.4
 
 <h2>Data sets:</h2>
 
