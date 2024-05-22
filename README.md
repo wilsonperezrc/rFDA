@@ -23,7 +23,9 @@ To evaluate the robustness of the proposed method, six mathematical models are c
 
   
   
-<h2>SCImago Journal Rank data</h2>
+<h2>Datasets:</h2>
+
+ We apply the methods analyzed in the study to two real datasets for outlier detection of functional curves.
  
  <h3>El Niño Sea Surface Temperature data</h3>
 
