@@ -17,12 +17,14 @@ Used R packages:
 
 To evaluate the robustness of the proposed method, six mathematical models are considered in the development of this study. These models are obtained from the <em>fdaoutlier</em> library in <em>R</em>, which compiles various existing models from the literature within FDA.
 
-  <h3>SCImago Journal Rank data</h3>
- 
-<h2>Simulation data:</h2>
+<h3>Simulation data:</h3>
 
  For each model considered in this study, one hundred simulations are conducted to analyze the behavior of each method and evaluate how each model responds to various conditions. A sample size of <em>n = 200</em> curvas are defined, with three different values selected for the contamination rate: <em>c = 5%, 10% and 20%</em>.
 
+  
+  
+<h2>SCImago Journal Rank data</h2>
+ 
  <h3>El Niño Sea Surface Temperature data</h3>
 
  The dataset corresponds to the monthly average of El Niño Sea Surface Temperature, representing Pacific Ocean temperatures in the South American coastal region (coordinates $90^{\circ} - 80^{\circ}$ West, $0^{\circ} - 10^{\circ}$ South). The dataset to be used is obtained from the <em>rainbow\_1.4.zip</em> library, available at https://cran.r-project.org/src/contrib/Archive/rainbow/.
