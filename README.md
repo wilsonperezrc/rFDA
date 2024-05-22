@@ -13,10 +13,15 @@ Used R packages:
 <LI> 'rainbow', version: 3.7
 </UL>
 
+<h2>Simulation:</h2>
 
-<h2>Data sets:</h2>
+To evaluate the robustness of the proposed method, six mathematical models are considered in the development of this study. These models are obtained from the <em>fdaoutlier</em> library in <em>R</em>, which compiles various existing models from the literature within FDA.
 
- We applied the methods analyzed in the study to two real datasets for the detection of functional curves.
+  <h3>SCImago Journal Rank data</h3>
+ 
+<h2>Simulation data:</h2>
+
+ For each model considered in this study, one hundred simulations are conducted to analyze the behavior of each method and evaluate how each model responds to various conditions. A sample size of <em>n = 200</em> curvas are defined, with three different values selected for the contamination rate: <em>c = 5%, 10% and 20%</em>.
 
  <h3>El Niño Sea Surface Temperature data</h3>
 
