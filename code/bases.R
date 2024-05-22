@@ -152,7 +152,7 @@ get_atypical_mahalnobis<-function(pc_obj,p_value,obj_fd, metodo, grafico='F', ti
 #   Returns:
 #     - pos_out: Vector of positions of the outlier observations
 #####################################################################################
-get_atipicos_fplot<-function(pc_obj,obj_fd,disc_array, grafico=FALSE){
+get_atypical_fplot<-function(pc_obj,obj_fd,disc_array, grafico=FALSE){
   out<-fbplot(disc_array, col = "blue", main = 'boxplot', method='MBD', plot = FALSE)
   pos_out<-out$outpoint
   print(pos_out)
