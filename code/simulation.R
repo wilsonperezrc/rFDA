@@ -85,7 +85,7 @@ run_modelos<-function(m1){
   #####################################
   
   # Call the function that obtains the n FPCs that sum up to 95% of variability
-  pc_obj_95<-get_armonicos_fpc(obj_fd,0.95)
+  pc_obj_95<-get_harmonics_fpc(obj_fd,0.95)
   num_arm_1<-length(pc_obj_95$varprop)
   
   # Process to obtain the outlier observations using Mahalanobis, FPCs that sum up to 95% of variability, and a confidence level x
@@ -108,7 +108,7 @@ run_modelos<-function(m1){
   
   #############
   # Call the function that obtains the n FPCs that sum up to 99% of variability
-  pc_obj_99<-get_armonicos_fpc(obj_fd,0.99)
+  pc_obj_99<-get_harmonics_fpc(obj_fd,0.99)
   num_arm_2<-length(pc_obj_99$varprop)
   
   # Process to obtain the outlier observations using Mahalanobis, FPCs that sum up to 99% of variability, and a confidence level x
@@ -132,7 +132,7 @@ run_modelos<-function(m1){
   
   #############
   # Analysis with 2C
-  pc_obj_fpca_2C<-get_armonicos_2C(obj_fd)
+  pc_obj_fpca_2C<-get_harmonics_2C(obj_fd)
   outliers_method_25<-get_atypical_mahalnobis(pc_obj_fpca_2C,0.95 ,obj_fd,'b')
   outliers_method_26<-get_atypical_mahalnobis(pc_obj_fpca_2C,0.95 ,obj_fd,'r')
   outliers_method_27<-get_atypical_mahalnobis(pc_obj_fpca_2C,0.95 ,obj_fd,'50')
@@ -165,7 +165,7 @@ run_modelos<-function(m1){
   #####################################
   # Analysis to be performed using the Mahalanobis method with LAMBDA > 1
   #####################################
-  pc_obj_lambda<-get_armonicos_fpc_lambda(obj_fd)
+  pc_obj_lambda<-get_harmonics_fpc_lambda(obj_fd)
   num_arm_lambda_1<-length(pc_obj_lambda$varprop)
   
   #####################################
@@ -195,7 +195,7 @@ run_modelos<-function(m1){
   
   
   print('==========FIN MODELADO=======') 
-  sum_arm<-round(pc_obj_95$sum_armonicos,4)
+  sum_arm<-round(pc_obj_95$sum_harmonics,4)
   print(sum_arm)
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_1,dim(m1$data)[1],num_arm_1,sum_arm))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_2,dim(m1$data)[1],num_arm_1,sum_arm))
@@ -209,7 +209,7 @@ run_modelos<-function(m1){
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_10,dim(m1$data)[1],num_arm_1,sum_arm))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_11,dim(m1$data)[1],num_arm_1,sum_arm))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_12,dim(m1$data)[1],num_arm_1,sum_arm))
-  sum_arm2<-round(pc_obj_99$sum_armonicos,4)
+  sum_arm2<-round(pc_obj_99$sum_harmonics,4)
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_13,dim(m1$data)[1],num_arm_2,sum_arm2))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_14,dim(m1$data)[1],num_arm_2,sum_arm2))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_15,dim(m1$data)[1],num_arm_2,sum_arm2))
@@ -222,7 +222,7 @@ run_modelos<-function(m1){
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_22,dim(m1$data)[1],num_arm_2,sum_arm2))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_23,dim(m1$data)[1],num_arm_2,sum_arm2))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_24,dim(m1$data)[1],num_arm_2,sum_arm2))
-  sum_arm3<-round(pc_obj_fpca_2C$sum_armonicos,4)
+  sum_arm3<-round(pc_obj_fpca_2C$sum_harmonics,4)
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_25,dim(m1$data)[1],2,sum_arm3))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_26,dim(m1$data)[1],2,sum_arm3))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_27,dim(m1$data)[1],2,sum_arm3))
@@ -239,7 +239,7 @@ run_modelos<-function(m1){
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_34,dim(m1$data)[1],num_arm_1,sum_arm))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_35,dim(m1$data)[1],num_arm_2,sum_arm2))
   
-  sum_arm4<-round(pc_obj_lambda$sum_armonicos,4)
+  sum_arm4<-round(pc_obj_lambda$sum_harmonics,4)
   
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_48,dim(m1$data)[1],-1,-1))
   df_result_j<-rbind(df_result_j, get_metrics(outliers_simulation,outliers_method_49,dim(m1$data)[1],-1,-1))
