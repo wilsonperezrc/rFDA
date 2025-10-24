@@ -15,7 +15,7 @@ Used R packages:
 
 <h2>Simulation:</h2>
 
-To evaluate the robustness of the proposed method, six mathematical models are considered in the development of this study. 
+Six mathematical models were employed to assess the robustness of the proposed method.
   
 <h2>Datasets:</h2>
 
