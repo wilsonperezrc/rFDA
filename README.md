@@ -19,12 +19,12 @@ Six mathematical models were employed to assess the robustness of the proposed m
   
 <h2>Datasets:</h2>
 
- We apply the methods analyzed in the study to two real datasets for outlier detection of functional curves.
+The methods analyzed in this study are applied to two real datasets to detect outliers.
  
  <h3>El Niño Sea Surface Temperature data</h3>
 
-The dataset to be used is obtained from the <em>rainbow\_1.4.zip</em> library, available at https://cran.r-project.org/src/contrib/Archive/rainbow/.
+The dataset employed was obtained from the <em>rainbow\_1.4.zip</em> library, available at https://cran.r-project.org/src/contrib/Archive/rainbow/.
 
   <h3>SCImago Journal Rank data</h3>
 
-A second example, we utilized data from the SCImago Journal Rank website, available at https://www.scimagojr.com. 
+As a second example, data from the SCImago Journal Rank (SJR) website were utilized in this study, available at https://www.scimagojr.com. 
